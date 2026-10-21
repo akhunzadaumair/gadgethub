@@ -1,0 +1,6 @@
+{
+  "name": "Gadgethub - Premium Electronics & Online Shopping Pakistan",
+  "description": "Pakistan's leading marketplace for electronics, mobile phones, computers, audio, and gadgets with Cash on Delivery nationwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

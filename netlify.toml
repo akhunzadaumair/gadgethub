@@ -1,0 +1,24 @@
+# ====================================================================
+# GADGETHUB - Netlify Configuration
+# ====================================================================
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Redirect rules: SPA fallback for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Important Note:
+# Gadgethub includes a full Node.js / Express backend (server.ts) for:
+# - Admin authorization (/api/admin/*)
+# - Order placement & stock validation (/api/orders)
+# - Resend email notifications
+# - Cloud Supabase synchronization
+#
+# Because Netlify by default is a static web host, the Express backend
+# (server.ts) must be hosted on a Node.js full-stack platform like Render.com,
+# Railway.app, or a VPS with environment variables configured.
